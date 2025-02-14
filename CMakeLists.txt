@@ -2,13 +2,25 @@
 cmake_minimum_required(VERSION 3.10)
 
 # Project name
-project(SmartHomeAutomation)
+project(SmartHomeDashboard)
 
+# Set the C++ standard
 set(CMAKE_CXX_STANDARD 17)
 
-# Find all the files in the src directory
+# Set the deployment target
+set(CMAKE_OSX_DEPLOYMENT_TARGET "14.0")
+
+# Find all the source files
 file(GLOB SOURCES "src/*.cpp")
-file(GLOB HEADERS "src/*.h")
+
+# Include the header files
+include_directories(include)
+
+# Find packages
+find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
 # Add the executable
-add_executable(SmartHomeAutomation ${SOURCES} ${HEADERS})
+add_executable(SmartHomeDashboard main.cpp ${SOURCES})
+
+# Link the libraries
+target_link_libraries(SmartHomeDashboard PRIVATE Qt6::Widgets)

@@ -5,5 +5,5 @@ cmake ..
 make
 echo "✅ Build complete! Running the program..."
 echo ""
-./SmartHomeAutomation
-make clean
+./SmartHomeDashboard
+# make clean
