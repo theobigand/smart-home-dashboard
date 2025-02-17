@@ -1,4 +1,4 @@
-#include "mainGui.h"
+#include <smart-home-dashboard/gui/mainGui.hpp>
 
 mainGui::mainGui(int argc, char* argv[], int height, int width) {
     // Constructor

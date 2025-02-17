@@ -1,5 +1,5 @@
 #include <iostream>
-#include "mainGui.h"
+#include <smart-home-dashboard/gui/mainGui.hpp>
 
 
 int main(int argc, char *argv[]) {

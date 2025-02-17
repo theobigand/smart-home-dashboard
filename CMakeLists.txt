@@ -11,16 +11,16 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_OSX_DEPLOYMENT_TARGET "14.0")
 
 # Find all the source files
-file(GLOB SOURCES "src/*.cpp")
+file(GLOB_RECURSE SOURCES "${CMAKE_SOURCE_DIR}/smart-home-dashboard/*.cpp")
 
-# Include the header files
-include_directories(include)
+# Add the executable
+add_executable(SmartHomeDashboard ${SOURCES})
+
+# Add smart-home-dashboard/ as a system include directory
+target_include_directories(SmartHomeDashboard SYSTEM PRIVATE "${CMAKE_SOURCE_DIR}")
 
 # Find packages
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
-
-# Add the executable
-add_executable(SmartHomeDashboard main.cpp ${SOURCES})
 
 # Link the libraries
 target_link_libraries(SmartHomeDashboard PRIVATE Qt6::Widgets)
