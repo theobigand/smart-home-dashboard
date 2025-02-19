@@ -18,7 +18,7 @@ A C++-based Smart Home Automation Dashboard with GUI, real-time IoT simulation, 
 
 ## Usage
 
-To run main programm:
+To run main program :
 
     ./run.sh
 
