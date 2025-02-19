@@ -13,7 +13,7 @@ A C++-based Smart Home Automation Dashboard with GUI, real-time IoT simulation, 
 
 ## Installation
 
-    git clone https://github.com/yourname/smart-home-dashboard.git
+    git clone https://github.com/theobigand/smart-home-dashboard.git
     cd smart-home-dashboard
 
 ## Usage
