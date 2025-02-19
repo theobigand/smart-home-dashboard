@@ -1,14 +1,13 @@
-#include <smart-home-dashboard/gui/mainGui.hpp>
+#include <smart-home-dashboard/include/gui/MainGui.hpp>
 
-mainGui::mainGui(int argc, char* argv[], int height, int width) {
-    // Constructor
+MainGui::MainGui(int argc, char* argv[], int height, int width) {
     this->argc = argc;
     this->argv = argv;
     this->height = height;
     this->width = width;
 }
 
-int mainGui::run() {
+int MainGui::run() {
     QApplication app(argc, argv);  // Create a QApplication object
 
     QMainWindow window;

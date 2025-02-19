@@ -5,14 +5,14 @@
 #include <QPushButton>
 
 
-class mainGui{
-private:
+class MainGui{
+protected:
     int argc;
     char** argv;
     int height;
     int width;
 
 public:
-    mainGui(int argc, char* argv[], int height, int width);
+    MainGui(int argc, char* argv[], int height, int width);
     int run();
 };
